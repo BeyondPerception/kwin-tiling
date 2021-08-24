@@ -23,11 +23,8 @@ Qt.include("signal.js");
 Qt.include("tile.js");
 Qt.include("tilelist.js");
 Qt.include("layout.js");
-Qt.include("spirallayout.js");
 Qt.include("halflayout.js");
-Qt.include("bladelayout.js");
 Qt.include("gridlayout.js");
-Qt.include("i3layout.js");
 Qt.include("tiling.js");
 Qt.include("tests.js");
 Qt.include("util.js");
@@ -48,10 +45,7 @@ function TilingManager(timerResize, timerGeometryChanged) {
      * List of all available layout types.
      */
     this.availableLayouts = [
-        I3Layout,
         HalfLayout,
-        BladeLayout,
-        SpiralLayout,
         GridLayout/*,
                       ZigZagLayout,
                       ColumnLayout,
